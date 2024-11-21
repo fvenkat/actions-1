@@ -1,12 +1,11 @@
-name: First Workflow 
-on: push
-
+name: First Workflow
+on:
+  push:  # This triggers the workflow on any push
 jobs:
   first_job:
-    runs-on:
-      - ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-    - name: Welcome
-      run: echo "Hello venkat"
-    - name: list
-      run: ls
+      - name: Welcome
+        run: echo "Hello venkat"
+      - name: List files
+        run: ls
